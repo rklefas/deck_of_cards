@@ -1,7 +1,7 @@
 <?php
 
 
-require "carddeck.class.php";
+require "vendor/autoload.php";
 
 
 $game = new CardDeck;
