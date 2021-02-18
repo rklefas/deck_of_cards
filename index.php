@@ -28,5 +28,12 @@ while ($card = $game->deal_one_card())
 
 $loader = new \Twig\Loader\FilesystemLoader('./templates/');
 $twig = new \Twig\Environment($loader);
-$template = $twig->load('index.html');
+
+// Display output appropriate for browser or cli
+
+if (isset($_SERVER['HTTP_HOST']))
+	$template = $twig->load('index.html');
+else
+	$template = $twig->load('index.txt');
+	
 echo $template->render(['display' => $display]);

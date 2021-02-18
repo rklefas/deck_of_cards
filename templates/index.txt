@@ -1,0 +1,5 @@
+Deck of Cards:
+
+{% for line in display %}
+-- {{ line }}
+{% endfor %}
