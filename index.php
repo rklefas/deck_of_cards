@@ -9,12 +9,12 @@ use InnoBrig\FlexInput\Input;
 if (isset($_SERVER['HTTP_HOST']))
 {
     $shuffleCount = (int) Input::fromGet('shuffles', 10);
-	$tFile = ('index.html');
+    $tFile = ('index.html');
 }
 else
 {
     $shuffleCount = (int) cli::input("How many shuffles? ");
-	$tFile = ('index.txt');
+    $tFile = ('index.txt');
 }
 
 // Instantiate the deck
