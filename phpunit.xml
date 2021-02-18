@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.7/phpunit.xsd"
-         backupGlobals="false"
-		 bootstrap="vendor/autoload.php"
-         beStrictAboutCoversAnnotation="true"
-         beStrictAboutOutputDuringTests="true"
-         beStrictAboutTestsThatDoNotTestAnything="true"
-         beStrictAboutTodoAnnotatedTests="true"
-         convertWarningsToExceptions="true"
-         convertNoticesToExceptions="true"
-         verbose="true">
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/5.7/phpunit.xsd"
+    backupGlobals="false"
+    bootstrap="vendor/autoload.php"
+    beStrictAboutCoversAnnotation="true"
+    beStrictAboutOutputDuringTests="true"
+    beStrictAboutTestsThatDoNotTestAnything="true"
+    beStrictAboutTodoAnnotatedTests="true"
+    convertWarningsToExceptions="true"
+    convertNoticesToExceptions="true"
+    verbose="true">
     <testsuite name="default">
         <directory suffix="Test.php">tests</directory>
     </testsuite>
