@@ -20,29 +20,13 @@ class CardDeck
         }
     }
 
-    /**
-    * A reusable algorithm for shuffling an array.
-    */
-    private function shuffle_algorithm($array)
-    {
-        $newArray = [];
-
-        foreach ($array as $card)
-        {
-            $newArray[$card] = mt_rand(1, 1000000);
-        }
-
-        asort($newArray);
-
-        return array_keys($newArray);
-    }
 
     /**
-    * Shuffle the deck
+    * Shuffle the deck, specify the number of shuffles
     */
     public function shuffle()
     {
-        $this->deck = $this->shuffle_algorithm($this->deck);
+        $this->deck = Shuffler::shuffle_algorithm($this->deck, 10);
     }
 
 

@@ -5,6 +5,6 @@
     },
 	
 	"autoload": {
-        "files": ["src/class.carddeck.php"]
+        "files": ["src/class.carddeck.php", "src/class.shuffler.php"]
     }
 }
