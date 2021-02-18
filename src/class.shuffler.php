@@ -12,17 +12,17 @@ class Shuffler
     {
         if ($shuffleRemaining > 0)
         {
-            // Break the array into two piles
-            $piles = [];
+            // Break the array into several piles
+            $piles = [[], [], [], []];
 
             foreach ($array as $item)
             {
                 // Randomly decide which pile the card goes into
-                $piles[ mt_rand(0, 1) ? 'one' : 'two' ][] = $item;
+                $piles[ mt_rand(0, 3) ][] = $item;
             }
 
             // Put the piles back together
-            $combined = array_merge($piles['one'], $piles['two']);
+            $combined = array_merge($piles[0], $piles[1], $piles[2], $piles[3]);
 
             // Shuffle the array again
             $combined = self::shuffle_algorithm($combined, $shuffleRemaining - 1);
