@@ -1,4 +1,7 @@
-Deck of Cards:
+
+==== Deck of Cards ====
+
+Shuffles: {{ shuffles }}
 
 {% for line in display %}
 -- {{ line }}

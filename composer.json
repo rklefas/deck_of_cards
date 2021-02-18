@@ -1,10 +1,15 @@
 {
     "require": {
         "twig/twig": "^3.3",
-        "phpunit/phpunit": "^8.5"
+        "phpunit/phpunit": "^8.5",
+        "innobrig/flex-input": "^1.0"
     },
-	
+
 	"autoload": {
-        "files": ["src/class.carddeck.php", "src/class.shuffler.php"]
+        "files": [
+            "src/class.carddeck.php",
+            "src/class.shuffler.php",
+            "src/class.cli.php"
+        ]
     }
 }

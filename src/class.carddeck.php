@@ -24,9 +24,9 @@ class CardDeck
     /**
     * Shuffle the deck, specify the number of shuffles
     */
-    public function shuffle()
+    public function shuffle($times = 15)
     {
-        $this->deck = Shuffler::shuffle_algorithm($this->deck, 10);
+        $this->deck = Shuffler::shuffle_algorithm($this->deck, $times);
     }
 
 

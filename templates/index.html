@@ -4,6 +4,15 @@
     <title>Deck Of Cards</title>
 </head>
 <body>
+
+
+    <form method="get" action="index.php">
+        How many shuffles? <input type="number" name="shuffles" value="{{ shuffles }}">
+        <input type="submit" value="enter">
+    </form>
+
+    <p>The deck has been shuffled {{ shuffles }} times.</p>
+
     <ul id="navigation">
         {% for line in display %}
         <li>{{ line }}</li>
