@@ -3,6 +3,11 @@
 
 require "vendor/autoload.php";
 use InnoBrig\FlexInput\Input;
+use Tracy\Debugger;
+
+Debugger::enable(Debugger::DETECT);
+Debugger::$showBar = false;
+Debugger::$strictMode = true; // display all errors
 
 // Display output appropriate for browser or cli
 

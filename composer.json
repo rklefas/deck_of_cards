@@ -1,11 +1,24 @@
 {
+    "name": "rklefas/deck_of_cards",
+    "description": "PHP implementation for a standard deck of poker-style playing cards",
+    "type": "project",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Ryan Klefas",
+            "homepage": "http://ryanklefas.com",
+            "role": "Developer"
+        }
+    ],
+
     "require": {
         "twig/twig": "^3.3",
         "phpunit/phpunit": "^8.5",
-        "innobrig/flex-input": "^1.0"
+        "innobrig/flex-input": "^1.0",
+        "tracy/tracy": "^2.8"
     },
 
-	"autoload": {
+    "autoload": {
         "files": [
             "src/interface.codechallenge.php",
             "src/class.carddeck.php",
