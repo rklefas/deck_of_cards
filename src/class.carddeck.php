@@ -1,7 +1,7 @@
 <?php
 
 
-class CardDeck
+class CardDeck implements CodeChallenge
 {
     private $deck = [];
     private $dealt = [];
