@@ -10,6 +10,15 @@ class cli
     	return $line;
     }
 
+    static public function input_number($v)
+    {
+        $input = trim(self::input($v));
 
+        if (is_numeric($input))
+            return $input;
+        else {
+            return self::input_number($v);
+        }
+    }
 
 }

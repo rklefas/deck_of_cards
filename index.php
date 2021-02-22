@@ -1,6 +1,5 @@
 <?php
 
-
 require "vendor/autoload.php";
 use InnoBrig\FlexInput\Input;
 use Tracy\Debugger;
@@ -11,15 +10,15 @@ Debugger::$strictMode = true; // display all errors
 
 // Display output appropriate for browser or cli
 
-if (isset($_SERVER['HTTP_HOST']))
+if (php_sapi_name() == 'cli')
 {
-    $shuffleCount = (int) Input::fromGet('shuffles', 10);
-    $tFile = ('index.html');
+    $shuffleCount = (int) cli::input_number("How many shuffles? ");
+    $tFile = ('index.txt');
 }
 else
 {
-    $shuffleCount = (int) cli::input("How many shuffles? ");
-    $tFile = ('index.txt');
+    $shuffleCount = (int) Input::fromGet('shuffles', 10);
+    $tFile = ('index.html');
 }
 
 // Instantiate the deck
